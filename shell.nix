@@ -7,3 +7,4 @@ mkShell {
     hugo
     nodejs-16_x 
   ];
+}
