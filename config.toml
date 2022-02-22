@@ -1,0 +1,4 @@
+baseURL = 'https://reseauets.cedille.club'
+languageCode = 'fr-ca'
+title = 'Réseau ÉTS'
+theme = 'reseauets'
