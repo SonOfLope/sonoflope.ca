@@ -1,10 +1,18 @@
+# shell.nix
 { pkgs ? import <nixpkgs> {} }:
+let
+  my-python = pkgs.python3;
+  python-with-my-packages = my-python.withPackages (p: with p; [
+    pip
+    pillow
 
-with pkgs;
-
-mkShell {
+  ]);
+in
+pkgs.mkShell {
   buildInputs = [
-    hugo
-    nodejs-16_x 
+    python-with-my-packages
   ];
+  shellHook = ''
+    PYTHONPATH=${python-with-my-packages}/${python-with-my-packages.sitePackages}
+  '';
 }
