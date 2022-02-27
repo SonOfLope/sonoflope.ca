@@ -4,8 +4,6 @@ let
   my-python = pkgs.python3;
   python-with-my-packages = my-python.withPackages (p: with p; [
     pip
-    pillow
-
   ]);
 in
 pkgs.mkShell {
