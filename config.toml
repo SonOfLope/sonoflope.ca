@@ -1,4 +1,4 @@
-baseURL = 'https://reseauets.cedille.club'
+#baseURL = 'https://sonoflope.ca'
 languageCode = 'fr-ca'
-title = 'Réseau ÉTS'
-theme = 'reseauets'
+title = 'Sonoflope'
+theme = 'piercer'
