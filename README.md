@@ -1,1 +1,2 @@
-# Wagtail CMS Site Project
+# sonoflope.ca
+Source code for my personal website. 
